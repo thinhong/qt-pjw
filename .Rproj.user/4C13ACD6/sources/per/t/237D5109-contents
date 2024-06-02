@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+
+execute:
+  freeze: auto
+
+website:
+  title: "qt-pjw"
+  sidebar:
+    style: "floating"
+    search: true
+    contents:
+      - section: "Basics"
+        contents:
+          - index.qmd
+          - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    code-overflow: wrap
+    code-copy: true
+    fig-format: svg
+    df-print: kable
+
+
+
